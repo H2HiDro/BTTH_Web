@@ -5,6 +5,13 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Hege Refsnes">
+    <style>
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+        }
+    </style>
 </head>
 
 <body>
@@ -98,5 +105,215 @@
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <a href="#top">Back to top</a>
     <!-- Bai tap 6a -->
+    <table style="border: 1px solid;">
+        <tr style="text-align: center; border: 1px solid;">
+            <td>1</td>
+            <td colspan="4">2</td>
+        </tr>
+        <tr style="text-align: center; border: 1px solid;">
+            <td rowspan="3">3</td>
+            <td bgcolor="orange">4</td>
+            <td bgcolor="orange">5</td>
+            <td rowspan="2" colspan="2" bgcolor="yellow">6</td>
+
+        </tr>
+        <tr style="text-align: center; border: 1px solid;">
+            <td bgcolor="orange">7</td>
+            <td bgcolor="orange">8</td>
+        </tr>
+        <tr style="text-align: center; border: 1px solid;">
+            <td colspan="2" bgcolor="yellow">9</td>
+            <td bgcolor="yellow" style="width: 100px;">10</td>
+        </tr>
+    </table>\
+    <!-- Bai tap 6b -->
+    <div>
+        <div>
+            <table style="background-color: burlywood;">
+                <tr style="text-align: center;">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td colspan="4">4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="6"><a href="#" style="color: red; font-size: 25px;">Part I</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><a href="" style="color: red; font-size:25px;">Chapter 1</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section A</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section B</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><a href="" style="color: red; font-size:25px;">Chapter 2</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section A</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font: size 19px;px;">Section B</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="6"><a href="#" style="color: red; font-size: 25px;">Part II</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><a href="" style="color: red; font-size:25px;">Chapter 3</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section A</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section B</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="5"><a href="" style="color: red; font-size:25px;">Chapter 4</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section A</a></td>
+                    <td></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="4"><a href="" style="color: red; font-size:19px;">Section B</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="2">
+            <b>With cellpadding:</b>
+            <table style="text-align: center; border: 1px solid;">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="3">
+            <b>With cellpadding:</b>
+            <table style="text-align: center; border: 1px solid;">
+                <tr>
+                    <td>6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6.470</td>
+                    <td>6.470</td>
+                </tr>
+                <tr>
+                    <td>6.470</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <!-- Bai 6c-->
+    <table>
+        <caption>NUMBER 1-5 IN VARIOUS LANGUAGES</caption>
+        <tr>
+            <td></td>
+            <td><u>English</u></td>
+            <td><u>Espa</u></td>
+            <td>Francais</td>
+            <td>Italiano</td>
+            <td>Deutsch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
 </html>
