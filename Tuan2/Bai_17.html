@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        background-color: rgb(253, 207, 121);
+        width: 75%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h3>Survey Form</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iure
+        fugiat quod sit facere minima tempora voluptatibus. Voluptate molestiae,
+        dolorum ipsam pariatur distinctio vitae eos. Quibusdam facere itaque cum
+        officia.
+      </p>
+      <label for="input-name">1. What is your name?</label> <br />
+      <input type="text" id="input-name" /> <br />
+      <label for="input-date">1. What is your date of birth?</label> <br />
+      <div id="input-date">
+        <label for="month">Month:</label>
+        <select name="" id="month">
+          <option value="">Tháng 1</option>
+          <option value="">Tháng 2</option>
+          <option value="">Tháng 3</option>
+          <option value="">Tháng 4</option>
+          <option value="">Tháng 5</option>
+          <option value="">Tháng 6</option>
+          <option value="">Tháng 7</option>
+          <option value="">Tháng 8</option>
+          <option value="">Tháng 9</option>
+          <option value="">Tháng 10</option>
+          <option value="">Tháng 11</option>
+          <option value="">Tháng 12</option>
+        </select>
+        <label for="date">Date:</label>
+        <select name="" id="date">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+          <option value="">10</option>
+          <option value="">11</option>
+          <option value="">12</option>
+          <option value="">13</option>
+          <option value="">14</option>
+          <option value="">15</option>
+          <option value="">16</option>
+          <option value="">17</option>
+          <option value="">18</option>
+          <option value="">19</option>
+          <option value="">20</option>
+          <option value="">21</option>
+          <option value="">22</option>
+          <option value="">23</option>
+          <option value="">24</option>
+          <option value="">25</option>
+          <option value="">26</option>
+          <option value="">27</option>
+          <option value="">28</option>
+          <option value="">29</option>
+          <option value="">30</option>
+          <option value="">31</option>
+        </select>
+        <label for="year">Year: </label>
+        <input type="number" name="" id="year" min="1000" max="3000" />
+      </div>
+      <label for="mail-address"
+        >3. Lorem ipsum dolor sit amet consectetur</label
+      >
+      <br />
+      <textarea name="" id="mail-address" cols="40" rows="4">
+Number/P.O:
+Street: 
+City:
+Zip:</textarea
+      > <br>
+      <label for="check-mail">4. What is your email address</label> <br>
+      <input type="text" name="" id="check-mail"> <br>
+      <label for="check-view-product">5. Have you viewed our...</label>
+      <div id="check-view-product">
+          <input type="radio" name="check" id="check-yes">
+          <label for="check-yes">Yes</label>
+          <input type="radio" name="check" id="check-no">
+          <label for="check-no">No</label>
+      </div>
+      <div>
+          <label for="check-product">6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis ducimus culpa </label>
+          <div id="check-product">
+              <input type="checkbox" name="" id="VCR">
+              <label for="VCR"> VCR</label> <br>
+              <input type="checkbox" name="" id="VCR1">
+              <label for="VCR1"> VCR</label> <br>
+              <input type="checkbox" name="" id="VCR2">
+              <label for="VCR2"> VCR</label> <br>
+              <input type="checkbox" name="" id="VCR3">
+              <label for="VCR3"> VCR</label> <br>
+              <input type="checkbox" name="" id="VCR4">
+              <label for="VCR4"> Order</label> 
+              <input type="text" value="please list">
+          </div>
+      </div>
+      <label for="input-question">7. Do you have any question?</label> <br>
+      <textarea name="" id="input-question" cols="30" rows="5">Your input:</textarea>
+      <div id="submit">
+          <div class="sendform"><input type="submit" value="Send Form">
+        <input type="submit" value="Clear Form"></div>
+      </div>
+    </form>
+  </body>
+</html>

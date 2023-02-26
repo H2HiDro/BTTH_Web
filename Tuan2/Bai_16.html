@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <div class="title"><h2>Travel reservation form</h2></div>
+        <div class="sub-title">* denotes mandotory</div>
+        <div class="name">
+            <label for="full-name">Full name*: </label>
+            <div class="input-name">
+                <input type="text" name="txtName" id="full-name" placeholder="First Name - Last Name">
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email address*: </label>
+            <div class="input-email">
+                <input type="email" name="txtEmail" id="email">
+            </div>
+        </div>
+        <div class="select-tour">
+            <label for="tour-package">Tour package*: </label>
+            <div>
+                <select name="txtTour" id="tour-package">
+                    <option value="">hihi</option>
+                    <option value="">haha</option>
+                    <option value="">kkkk</option>
+                </select>
+            </div>
+        </div>
+        <div class="arr-date">
+            <label for="arrival-date">Arrival date</label>
+            <div>
+                <input type="date" name="" id="arrival-date">
+            </div>
+        </div>
+        <div class="num-of-person">
+            <ul>
+                <li><label for="num-of-per">Number of persons</label></li>
+                <li><input type="text" name="" id="num-of-per" placeholder="UNKNOWN_TYPE"></li>
+            </ul>
+        </div>
+        <div class="favorite">
+            <ul style="list-style: none;">
+                <li>what would you want to avail</li>
+                <li><input type="checkbox" name="" id="">Boarding</li>
+                <li><input type="checkbox" name="" id="">Boarding</li>
+                <li><input type="checkbox" name="" id="">Boarding</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><label for="coupon-input">Discout coupon code: </label></li>
+                <li><input type="text" name="" id="coupon-input" placeholder="UNKNOWN_TYPE"></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Terms and conditions*</li>
+                <li><input type="radio" name="answer" id="agree">
+                    <label for="agree">I agree</label>
+                    <input type="radio" name="answer" id="disagree">
+                    <label for="disagree">I disagree</label>
+                </li>
+            </ul>
+        </div>
+        <div class="submit-button">
+            <input type="submit" value="Complete reservation">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
