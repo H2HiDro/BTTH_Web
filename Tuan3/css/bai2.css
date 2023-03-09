@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.doan1 {
+  text-indent: 1cm;
+  color: red;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.doan2 {
+  text-align: right;
+  color: blue;
+}
+.doan3 {
+  text-align: center;
+  color: green;
+}
+.doan4 {
+  text-align: left;
+  color: purple;
+}
+.doan5 {
+  text-decoration: underline;
+  color: plum;
+}
+.doan6 {
+  text-decoration: line-through;
+  color: blueviolet;
+}
+.doan7 {
+  text-decoration: overline;
+  color: red;
+}
+.doan8 {
+  text-decoration: blink;
+  text-align: justify;
+  text-shadow: 4px 4px 8px blue;
+}
+.text-effecrs .colorful-style {
+  padding-left: 20px;
+  font-weight: bold;
+  text-shadow: -1px -2px 1px palevioletred, 1px 2px 1px greenyellow;
+    /* -30px 30px 0px #00bdbd; */
+}
+.insert-effect {
+  background: rgba(236, 189, 189, 0.6);
+  color: rgb(110, 9, 114);
+  text-shadow: 2px 2px 3px rgba(223, 57, 134, 0.1);
+  display: inline-block;
+}
+
+.double-font {
+  text-shadow: 0 -3px 0 rgb(224, 62, 138);
+  font-weight: bold;
+}
+
+.glossy-style {
+  background: -webkit-linear-gradient(top, rgb(246, 245, 223), rgb(255, 255, 185) 50%, rgb(255, 255, 88) 50%, rgb(255, 255, 0));
+    -webkit-background-clip: text;
+  color: transparent;
+  font-family: Myriad, sans-serif;
+  white-space: nowrap;
+}
+
+.grunge-style {
+}
+
+.neon-glow {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
