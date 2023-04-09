@@ -1,0 +1,36 @@
+.stopwatch {
+    text-align: center;
+}
+
+.display {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.display p {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    color: #000000;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

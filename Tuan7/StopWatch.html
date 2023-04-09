@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/StopWatch.css">
+</head>
+
+<body>
+    <div class="stopwatch">
+        <h1>Stopwatch</h1>
+        <div class="display">
+            <p id="hours">00</p>
+            <span>:</span>
+            <p id="minutes">00</p>
+            <span>:</span>
+            <p id="seconds">00</p>
+            <span>:</span>
+            <p id="milliseconds">000</p>
+        </div>
+        <div class="controls">
+            <button id="start" onclick="start()">Start</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script>
+        let hours = 0;
+        let minutes = 0;
+        let seconds = 0;
+        let milliseconds = 0;
+
+        let timer;
+
+        function start() {
+            clearInterval(timer);
+            timer = setInterval(run, 10);
+        }
+
+        function run() {
+            milliseconds += 10;
+            if (milliseconds == 1000) {
+                milliseconds = 0;
+                seconds++;
+            }
+            if (seconds == 60) {
+                seconds = 0;
+                minutes++;
+            }
+            if (minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+
+            display();
+        }
+
+        function stop() {
+            clearInterval(timer);
+        }
+
+        function reset() {
+            clearInterval(timer);
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+            milliseconds = 0;
+
+            display();
+        }
+
+        function display() {
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            document.getElementById("milliseconds").innerText = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+        }
+    </script>
+</body>
+
+</html>
